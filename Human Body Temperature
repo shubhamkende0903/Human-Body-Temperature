@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    float temp;
+
+    printf("Enter body temperature in Celsius: ");
+    scanf("%f", &temp);
+
+    if (temp < 35)
+        printf("Low body temperature");
+    else if (temp < 38)
+        printf("Temperature below fever range");
+    else
+        printf("Fever range");
+
+    return 0;
+}
